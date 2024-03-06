@@ -11,6 +11,9 @@ BENCHS="${DEST}"/benchs
 BENCHS_LIST="${DEST}"/benchs.list
 set -x
 mkdir -p "${TESTS}" "${BENCHS}" "${EXES}"
+touch "${TESTS_LIST}"
+touch "${EXES_LIST}"
+touch "${BENCHS_LIST}"
 set +x
 
 echo "[*] Setting-up cabal-plan"
